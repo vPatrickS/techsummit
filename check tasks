@@ -1,0 +1,6 @@
+curl -X GET \
+  https://10.68.69.102:9440/api/nutanix/v0.8/tasks/ \
+  -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 672ac3cd-4775-0692-7db3-3a5641bd9235'
