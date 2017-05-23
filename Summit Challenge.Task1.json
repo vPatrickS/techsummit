@@ -1,0 +1,65 @@
+{
+	"id": "5d1dcdff-b679-0b81-46c7-3a1cf9e199ea",
+	"name": "Summit Challenge",
+	"description": "Show Env details for vm's, containers and IP addresses",
+	"order": [
+		"c90ae27f-c17e-6cef-2a5a-28314a5981d7",
+		"f1247ada-24fc-46d1-e4bc-2e03ac815a8e"
+	],
+	"folders": [],
+	"timestamp": 1495543084661,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "c90ae27f-c17e-6cef-2a5a-28314a5981d7",
+			"headers": "",
+			"url": "https://10.68.69.102:9440/PrismGateway/services/rest/v1/vms/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d1dcdff-b679-0b81-46c7-3a1cf9e199ea",
+			"data": null,
+			"dataMode": "params",
+			"name": "Retrieve vm details",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1495543163048,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "admin",
+				"password": "Canary01",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "f1247ada-24fc-46d1-e4bc-2e03ac815a8e",
+			"headers": "Authorization: Basic YWRtaW46Q2FuYXJ5MDE=\n",
+			"url": "https://10.68.69.102:9440/PrismGateway/services/rest/v1/containers/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d1dcdff-b679-0b81-46c7-3a1cf9e199ea",
+			"data": null,
+			"dataMode": "params",
+			"name": "Retrieve Container details",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1495543241988,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "admin",
+				"password": "Canary01",
+				"saveToRequest": true
+			}
+		}
+	]
+}
