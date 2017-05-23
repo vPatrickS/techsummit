@@ -1,0 +1,8 @@
+curl -- insecure -s -X PUT \
+  https://10.68.69.102:9440/PrismGateway/services/rest/v2.0/storage_containers/ \
+  -u admin:nutanix/4u \
+  -d '{
+  "compression_enabled": false,
+  "name": "nutanix",
+  "storage_container_uuid": "e7f51d22-af1a-4896-8128-58b08a603090"
+}'
